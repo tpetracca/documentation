@@ -121,6 +121,8 @@ This results in `request.Latency` reporting **four custom metrics**.
 
 ### Effect of adding tags
 
+Ursula
+
 Adding tags **may not** result in more custom metrics. Your count of custom metrics usually scales with the most granular or detailed tag. Suppose you are measuring temperature in the US, and you have tagged your `temperature` metric by country and region. You submit the following to Datadog:
 
 | Metric Name   | Tag Values                         |
@@ -238,9 +240,21 @@ Custom metrics volumes can be impacted by configuring tags and aggregations usin
 #### When will you be charged for ingested vs indexed custom metrics?
 If a metric is not configured with Metrics without Limits™, you're only charged for indexed custom metrics.
 
+why is my table not showing up
+
+|                                  | Indexed Custom Metrics<br>based on monthly average # of CMs/hour                           |
+|----------------------------------|--------------------------------------------------------------------------------------------|
+| Account allotment                | - Pro: 100 indexed CMs/host <br>- Enterprise: 200 indexed CMs/host                         |
+| If account allotment is exceeded | An additional current contract price for custom metrics/100 indexed custom metrics applied |
+
+
 {{< img src="account_management/billing/custom_metrics/mwl-unconfigured-pricing.jpg" alt="Unconfigured Metrics have indexed custom metrics only" style="width:80%;">}}
 
 If a metric is configured with Metrics without Limits™ (tags/aggregations are configured), you pay for ingested custom metrics and indexed custom metrics.
+
+|      | Required    | Description |
+| ---  | ----------- | ----------- |
+|
 
 {{< img src="account_management/billing/custom_metrics/mwl-pricing-configured.jpg" alt="Configured Metrics have ingested and indexed custom metrics costs" style="width:80%;">}}
 
